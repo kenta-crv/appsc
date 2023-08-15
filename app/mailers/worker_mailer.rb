@@ -1,9 +1,9 @@
 class WorkerMailer < ActionMailer::Base
-  default from: "info@ri-plus.jp"
+  default from: "appsc@factoru.jp"
 
   def received_email(worker)
     @worker = worker
-    mail to: "info@ri-plus.jp"
+    mail to: "appsc@factoru.jp"
     mail(subject: '株式会社Ri-Plusに求人申込がありました') do |format|
       format.text
     end
